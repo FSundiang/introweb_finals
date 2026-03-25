@@ -1,0 +1,166 @@
+<!--
+	Full Name: Sundiang, Francis Carl A.
+	Section: WD-201
+	Activity: Final Peta
+	Date:  November 11,2023
+	-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <link href="Drawings.css" rel="stylesheet" type="text/css"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="website icon" type="png" href="img/globe.png">
+  <title>Drawings</title>
+</head>
+ <style>
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .image-gallery img {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solclass #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#"> Drawing Commissions</a></div>
+      <ul class="links">
+        <li><a href="index.htm" title="Home">Home </a></li>
+        <li><a href="Services.htm" title="Services">Services</a> </li>
+        <li><a href="About Us.htm" title="About">About Us </a></li>
+        <li><a href="Profile.htm" title="Profile">Profile </a></li>
+      </ul>
+
+      <a href="#" class="action_btn">Menu Button</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <li><a href="index.htm" title="Home">Home </a></li>
+      <li><a href="Services.htm" title="Services">Services</a> </li>
+      <li><a href="About Us.htm" title="About">About </a></li>
+      <li><a href="Profile.htm" title="Profile">Profile </a></li>
+      <li><a href="#" class="action_btn">Menu Button</a></li>
+    </div>
+  </header>
+
+<h2>Pokémon Commissions</h2>
+<div class="image-gallery" id= "tab-desk">
+<img src="img/mamama.png">
+<img src="img/poko1.png">
+<img src="img/pokemon-1.png">
+<img src="img/pokemon kanto.png">
+<img src="img/pokemon-2.png">
+<img src="img/pokemon-3.png">
+<img src="img/pokemon-4.png">
+<img src="img/pokemon-2.png">
+<img src="img/pokemon-6.png">
+<img src="img/pokemon-7.png">
+<img src="img/pokemon-8.png">
+<img src="img/pokemon-9.png">
+<img src="img/pokemon-10.png">
+</div>
+
+<h2>君の名は (Your Name)</h2>
+<div class="image-gallery" id = "tab-desk">
+  <img src="img/kimi no nawa bg1.jpg">
+  <img src="img/Mitsuha.png">
+</div>
+
+<h2>Still life Drawing</h2>
+<div class="image-gallery" id = "tab-desk">
+  <img src="img/still life drawing.jpg">
+  <img src="img/Still life Drawing_Sundiang-F..jpg">
+</div>
+
+<h2>Demon Slayer Mugen Train Time Frame</h2>
+<div class="image-gallery" id = "tab-desk">
+  <img src="img/timeframe-ds.jpg">
+  <img src="img/ds-1.jpg">
+  <img src="img/ds-2.jpg">
+  <img src="img/ds-3.jpg">
+  <img src="img/ds-4.jpg">
+</div>
+
+<h2>Other Drawings</h2>
+<div class="image-gallery" class= "tab-desk">
+  <img src = "img/water.jpg">
+  <img src = "img/explosion.jpg">
+  <img src = "img/elements.jpg">
+  <img src = "img/deku.jpg">
+  <img src = "img/avatar.jpg">
+  <img src = "img/eye.jpg">
+  <img src = "img/Portrait-drawing.jpg">
+  <img src = "img/marin.jpg">
+  <img src = "img/usamimi.jpg">
+  <img src = "img/stalker.jpg">
+  <img src = "img/umaru.jpg">
+  <img src = "img/worms eye view.jpg">
+  <img src = "img/annoyed.jpg">
+  <img src = "img/sleep.jpg">
+  <img src = "img/building.jpg">
+
+
+<h2>Short anime video example:</h2> <!--This video was made in our Animation Subject when we are Grade 12. It was made by me and my groupmates.-->
+<video width="320" height="240" controls>
+  <source src="vid/video short-anime.mp4" type="video/mp4">
+</video>
+</div>
+
+<button class="back-to-top" id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("backToTopBtn").style.display = "block";
+    } else {
+      document.getElementById("backToTopBtn").style.display = "none";
+    }
+  }
+
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  document.getElementById("backToTopBtn").addEventListener("click", scrollToTop);
+</script>
+
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen 
+      ? 'fa-solid fa-xmark' 
+      : 'fa-solid fa-bars'
+    }
+  </script>
+</body>
+
+</html>

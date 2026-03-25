@@ -1,0 +1,96 @@
+<!--
+	Full Name: Sundiang, Francis Carl A.
+	Section: WD-201
+	Activity: Final Peta
+	Date:  November 11,2023
+	-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Commissions Survey</title>
+    <link rel="stylesheet" type="text/css" href="Form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="website icon" type="png" href="img/globe.png">
+</head>
+<body>
+    <h1>Art Commissions Survey</h1>
+    <p>Please select your preferred drawing style:</p>
+
+    <form>
+        <table>
+            <tr>
+                <th>Survey</th>
+                <th>Style</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="traditional" name="drawing_type" value="Traditional">
+                </td>
+                <td>Traditional Drawing</td>
+                <td>Art created using physical mediums like pencils, paints, and paper.</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="digital" name="drawing_type" value="Digital">
+                </td>
+                <td>Digital Drawing</td>
+                <td>Art created using digital tools and software on a computer or tablet.</td>
+            </tr>
+        </table>
+
+        <h2>Commissioned Drawing Styles:</h2>
+        <p>Select one of the following styles if you have a specific preference:</p>
+
+        <table>
+            <tr>
+                <th>Survey</th>
+                <th>Style</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="anime" name="commission_style" value="Anime Style Drawing">
+                </td>
+                <td>Anime Style Drawing</td>
+                <td>Artwork in the style of Japanese anime and manga, defined by various character designs and expressions.</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="real" name="commission_style" value="Real Life Drawing">
+                </td>
+                <td>Real Life Drawing</td>
+                <td>Realistic and detailed art that closely matches real-life subjects.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="perspective" name="commission_style" value="Perspective Drawing">
+                </td>
+                <td>Perspective Drawing</td>
+                <td>Art that focuses on accurately expressing three-dimensional space and things.</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="chibi" name="commission_style" value="Chibi Style Drawing">
+                </td>
+                <td>Chibi Style Drawing</td>
+                <td>Cute and exaggerated portraying style that frequently features little and chubby figures with large eyes and heads.</td>
+            </tr>
+        </table>
+
+        <input type="submit" id="submit-button" value="Submit">
+    </form>
+
+        <button id="backButton">Home Page</button>
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+            window.location.href = "index.htm";
+        }); 
+    </script>
+        
+</body>
+</html>
